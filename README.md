@@ -14,15 +14,15 @@ download datasets from kaggle.com
 ### Using nn
 1. run train_simple_nn.py file using this commad
 `python train_simple_nn.py --dataset animals --model output/simple_nn.model \
-	--label-bin output/simple_nn_lb.pickle --plot output/simple_nn_plot.png`
+	--label_bin output/simple_nn_lb.pickle --plot output/simple_nn_plot.png`
 
 2. run predict.py file using this command
 `python predict.py --image images/cat.jpg --model output/simple_nn.model \
-	--label-bin output/simple_nn_lb.pickle --width 32 --height 32 --flatten 1`
+	--label_bin output/simple_nn_lb.pickle --width 32 --height 32 --flatten 1`
 
 ### Using cnn
 1. run train_vgg.py file using this command `python train_vgg.py --dataset animals --model output/smallvggnet.model \
-	--label-bin output/smallvggnet_lb.pickle \
+	--label_bin output/smallvggnet_lb.pickle \
 	--plot output/smallvggnet_plot.png`
 2. run predict.py file `python predict.py --image images/panda.jpg --model output/smallvggnet.model \
-	--label-bin output/smallvggnet_lb.pickle --width 64 --height 64`
+	--label_bin output/smallvggnet_lb.pickle --width 64 --height 64`
