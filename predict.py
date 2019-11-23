@@ -19,6 +19,7 @@ ap.add_argument("-f", "--flatten", type=int, default=-1,
                 help="whether or not we should flatten the image")
 args = vars(ap.parse_args())
 
+
 # load the input image and resize it to the target spatial dimensions
 image = cv2.imread(args["image"])
 output = image.copy()
